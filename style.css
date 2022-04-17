@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: black;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#mainBox{
+    width: 270px;
+    padding: 10px;
+    font-size: 30px;
+    font-family: 'Open Sans', sans-serif;
+    border: 2px solid;
+    box-shadow: 0px 0px 25px;
+    border-radius: 20px;
+    text-align: center;
+    cursor: default;
+    animation-name: change-color;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes change-color {
+    0% {
+        box-shadow: yellow;
+        color: yellow;
+        border-color: yellow;
+    }
+    20% {
+        box-shadow: crimson;
+        color: crimson;
+        border-color: crimson;
+    }
+    40% {
+        box-shadow: violet;
+        color: violet;
+        border-color: violet;
+    }
+    60% {
+        box-shadow: cyan;
+        color: cyan;
+        border-color: cyan;
+    }
+    80% {
+        box-shadow: lime;
+        color: lime;
+        border-color: lime;
+    }
+    100% {
+        box-shadow: yellow;
+        color: yellow;
+        border-color: yellow;
+    }
+}
